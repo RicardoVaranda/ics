@@ -9,7 +9,7 @@ Generate [iCalendar](http://tools.ietf.org/html/rfc5545) files.
 
 ## Installation
 
-`npm install ics`
+`npm install ics2.0`
 
 ## Usage
 
