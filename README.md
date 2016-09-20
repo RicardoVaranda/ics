@@ -30,6 +30,7 @@ Returns a callback with an iCal-compliant `.ics` file.
 - `eventName`: (String) Title of the event as it appears in calendar application
 - `filename`: (String) Name of the iCal file. Defaults to `calendar-event.ics`.
 - `location`: (String) Location of the event.
+- `url`: (String) Url of website
 - `organizer`: (Object)
   - `name`: (String)
   - `email`: (String)
@@ -48,8 +49,8 @@ var options = {
   dtstart: 'Sat Nov 02 2014 13:15:00 GMT-0700 (PDT)',
   location: 'Here and there',
   email: {
-    name: 'Isaac Asimov',
-    email: 'isaac@asimov.com'
+    name: 'Bob',
+    email: 'Bob@Jamaica.com'
   }
 };
 
@@ -76,6 +77,7 @@ ORGANIZER;CN=John Doe:MAILTO:john.doe@example.com
 DTSTART:20150714T170000Z
 DTEND:20150715T035959Z
 SUMMARY:Fingerpainting lessons
+URL:http://google.com
 END:VEVENT
 END:VCALENDAR
 ```
@@ -85,6 +87,7 @@ END:VCALENDAR
 - [x] Description property
 - [x] Add express/restify browser download examples
 - [x] Add Attendees
+- [x] URL Support
 - [ ] [Recurrence Identifier Range](http://tools.ietf.org/html/rfc5545#section-3.2.13)
 - [ ] [Alarm Trigger Relationship](http://tools.ietf.org/html/rfc5545#section-3.2.14)
 - [ ] [Time Zone Identifier](http://tools.ietf.org/html/rfc5545#section-3.2.19)
